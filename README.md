@@ -60,7 +60,7 @@ or
 
 The `console.log` goes to `stdout` then printed into `out.svg`. Job done!
 
-![IBIP](https://raw.githubusercontent.com/hugolpz/svgcreator.node.js/master/out.svg)
+![IBIP](https://rawgithub.com/hugolpz/svgcreator.node.js/master/out.svg)
 
 ### Humans
 
