@@ -61,6 +61,8 @@ or
 The `console.log` goes to `stdout` then printed into `out.svg`. Job done!
 
 ![no comment](https://rawgithub.com/hugolpz/svgcreator.node.js/master/out.svg)
+<img src="https://rawgithub.com/hugolpz/svgcreator.node.js/master/out.svg">
+
 
 ### Humans
 
