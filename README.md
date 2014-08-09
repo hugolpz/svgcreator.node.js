@@ -61,10 +61,6 @@ or
 The `console.log` goes to `stdout` then printed into `out.svg`. Job done!
 
 ![no comment](https://raw.github.com/hugolpz/svgcreator.node.js/master/out.png)
-![no comment](https://rawgithub.com/hugolpz/svgcreator.node.js/master/out.png)
-<img src="https://rawgithub.com/hugolpz/svgcreator.node.js/master/out.svg">
-![Alt text](http://hugolpz.github.io//svgcreator.node.js/master/out.svg)
-<img src="http://potherca.github.io/StackOverflow/question.13808020.include-an-svg-hosted-on-github-in-markdown/controllers_brief.svg">
 
 ### Humans
 
