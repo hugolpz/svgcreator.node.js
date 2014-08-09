@@ -67,7 +67,7 @@ The `console.log` goes to `stdout` then printed into `out.svg`. Job done!
 ![no comment](https://raw.github.com/hugolpz/svgcreator.node.js/master/out.png)
 
 ### Passing arguments: from command to JS to SVG
-It is also possible to pass variables from the terminal to the JS and following SVG. Let's say I want to assign the SVG rectangle a variable color's value.
+It is also possible to pass variables from the terminal to the JS and following SVG. Let's say you want to assign the SVG rectangle a variable color's value.
 
 **4a. `jsdom.node.with_parameters.js` file**, check the 2 changes :
     
@@ -108,8 +108,8 @@ It is also possible to pass variables from the terminal to the JS and following 
 
 ### Humans
 
-- Hugo Lopez, 
+- Hugo Lopez, [@hugo_lz](http://twitter.com/hugo_lz)
 
 ### License
 
-- MIT license, CC-by-sa (citation)
+- MIT license, CC-by-sa  -- author citation required.
