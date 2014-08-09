@@ -52,9 +52,9 @@ Using the Node Packages Manager ([2](https://github.com/tmpvar/jsdom#install)):
 **4. Run in terminal** 
     
     $cd /my/working/dir/
-    $node jsdom.node.js > item.svg
+    $node jsdom.node.js > out.svg
 
-The stdout output is printed into `output.svg`. Job done!
+The stdout output is printed into `out.svg`. Job done!
 
 ### Humans
 
