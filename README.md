@@ -11,7 +11,7 @@ For scriptic SVG generation via D3js, you have to:
 3. Select the relevant part, and print it into a *.svg file
 Then nothing is stopping you :)
 
-### Node.js + jsdom
+### Node.js + jsdom + D3js = SVG
 
 **1. Install NodeJS:**
 Follow: How to install Node.js (aka NPM)? ([1](http://howtonode.org/how-to-install-nodejs)).
@@ -21,6 +21,7 @@ Using the Node Packages Manager ([2](https://github.com/tmpvar/jsdom#install)):
 
     $sudo npm install -g jsdom     # -g for global installation
 or
+
     $npm install jsdom             # local installation
 
 **3. Create a jsdom.node.js file, then insert in it your D3js code** :
@@ -57,7 +58,7 @@ or
     $cd /my/working/dir/
     $node jsdom.node.js > out.svg
 
-The stdout output is printed into `out.svg`. Job done!
+The `console.log` goes to `stdout` then printed into `out.svg`. Job done!
 
 ### Humans
 
