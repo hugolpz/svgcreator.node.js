@@ -19,14 +19,17 @@ Follow: How to install Node.js (aka NPM)? ([1](http://howtonode.org/how-to-insta
 **2. Install jsdom**
 Using the Node Packages Manager ([2](https://github.com/tmpvar/jsdom#install)):
 
-    $npm install -g jsdom     # -g for global installation
+    $sudo npm install -g jsdom     # -g for global installation
+or
+    $npm install jsdom             # local installation
 
 **3. Create a jsdom.node.js file, then insert in it your D3js code** :
 
     var jsdom = require('jsdom');
     jsdom.env(
-      "<html><body></body></html>",        // CREATE DOM HOOK:
-      [ 'http://d3js.org/d3.v3.min.js' ],   // JS DEPENDENCIES
+      "<html><body></body></html>",        // CREATE DOM HOOK
+      [ 'http://d3js.org/d3.v3.min.js',    // JS DEPENDENCIES online ...
+      'js/d3.v3.min.js' ],                 // ... & offline
     // D3JS CODE * * * * * * * * * * * * * * * * * * * * * * * *
       function (err, window) {
         var svg = window.d3.select("body")
