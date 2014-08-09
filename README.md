@@ -24,7 +24,7 @@ or
 
     $npm install jsdom             # local installation
 
-**3. Create a jsdom.node.js file, then insert in it your D3js code** :
+**3. Create a jsdom.node.js file, then insert your D3js code in it** :
 
     var jsdom = require('jsdom');
     jsdom.env(
