@@ -14,16 +14,15 @@ Then nothing is stopping you :)
 ### Node.js + jsdom + D3js = SVG
 
 
-**1. Install NodeJS ([1](http://howtonode.org/how-to-install-nodejs)).**
+**1. Install NodeJS ([1](http://howtonode.org/how-to-install-nodejs))**
 
     curl http://npmjs.org/install.sh | sh       #this should work (not tested), may need sudo.
 
-**2. Install jsdom**
-Using the Node Packages Manager ([2](https://github.com/tmpvar/jsdom#install)):
+**2. Install jsdom ([2](https://github.com/tmpvar/jsdom#install))**
+Using the Node Packages Manager, as global or local:
+
 
     $sudo npm install -g jsdom     # -g for global installation
-or
-
     $npm install jsdom             # local installation
 
 **3. Create a jsdom.node.js file, then insert your D3js code in it** :
@@ -54,7 +53,7 @@ or
         console.log(window.d3.select("body").html());
      }
     // END (D3JS) * * * * * * * * * * * * * * * * * * * * * * * *
-    
+
     );
 
 **4. Run in terminal** 
