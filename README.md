@@ -22,7 +22,9 @@ Using the Node Packages Manager, as global or local:
 
 
     $sudo npm install -g jsdom     # -g for global installation
-    $npm install jsdom             # local installation
+    $npm install jsdom             # local install
+
+You also need [D3js](http://d3js.org/d3.v3.min.js).
 
 ### Node.js + jsdom + D3js = SVG
 
@@ -105,6 +107,28 @@ It is also possible to pass variables from the terminal to the JS and following 
     $COLOR=#66AAFF node svgcreator.node.js > out.svg   #passing var COLOR
 
 ![no comment](https://raw.github.com/hugolpz/svgcreator.node.js/master/out.VAR_COLOR.png)
+
+### Terminal arguments
+For purity, if you need command lines with arguments on the right side of the script, such :
+
+   node svgcreator.node.js --COLOR=#66AAFF > out.svg
+
+You then **must** include [`minimist`](https://github.com/substack/minimist/), an arguments parser :
+
+   npm install minimist  # local install
+
+and complete your node.js file with :
+
+   var jsdom = require('jsdom');
+   var argv = require('minimist')(process.argv.slice(2));  // <<############### IMPORTANT !!
+   ...
+   var color = argv.COLOR;        // <<############### IMPORTANT !!
+   ...
+   .style("fill", color);         // <<############### IMPORTANT !!
+
+it does the trick.
+
+
 
 ### Humans
 

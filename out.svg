@@ -1,1 +1,3 @@
-<svg width="100" height="100"><rect id="rect1" x="10" y="10" width="80" height="80" style="fill: #66AAFF,;"></rect></svg>
+<svg width="100" height="100">
+	<rect id="rect1" x="10" y="10" width="80" height="80" style="fill: #66AAFF;"></rect>
+</svg>
