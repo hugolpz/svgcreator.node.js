@@ -111,7 +111,7 @@ It is also possible to pass variables from the terminal to the JS and following 
 ### Terminal arguments
 For purity, if you need command lines with arguments on the right side of the script, such :
 
-   node svgcreator.node.js --COLOR=#66AAFF > out.svg
+    node svgcreator.node.js --COLOR=#66AAFF > out.svg
 
 You then **must** include [`minimist`](https://github.com/substack/minimist/), an arguments parser :
 
