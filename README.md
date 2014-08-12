@@ -115,16 +115,16 @@ For purity, if you need command lines with arguments on the right side of the sc
 
 You then **must** include [`minimist`](https://github.com/substack/minimist/), an arguments parser :
 
-   npm install minimist  # local install
+    npm install minimist  # local install
 
 and complete your node.js file with :
 
-   var jsdom = require('jsdom');
-   var argv = require('minimist')(process.argv.slice(2));  // <<############### IMPORTANT !!
-   ...
-   var color = argv.COLOR;        // <<############### IMPORTANT !!
-   ...
-   .style("fill", color);         // <<############### IMPORTANT !!
+    var jsdom = require('jsdom');
+    var argv = require('minimist')(process.argv.slice(2));  // <<############### IMPORTANT !!
+    ...
+    var color = argv.COLOR;        // <<############### IMPORTANT !!
+    ...
+    .style("fill", color);         // <<############### IMPORTANT !!
 
 it does the trick.
 
