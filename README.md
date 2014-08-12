@@ -26,7 +26,7 @@ Using the Node Packages Manager, as global or local:
 
 ### Node.js + jsdom + D3js = SVG
 
-**3a. Create a `jsdom.node.js` file, then insert your D3js code in it** :
+**3a. Create a `svgcreator.node.js` file, then insert your D3js code in it** :
 
     var jsdom = require('jsdom');
     jsdom.env(
@@ -60,7 +60,7 @@ Using the Node Packages Manager, as global or local:
 **3b. Run in terminal** 
     
     $cd /my/working/dir/
-    $node jsdom.node.js > out.svg
+    $node svgcreator.node.js > out.svg
 
 The `console.log` goes to `stdout` then printed into `out.svg`. Job done!
 
@@ -69,7 +69,7 @@ The `console.log` goes to `stdout` then printed into `out.svg`. Job done!
 ### Passing arguments: from command to JS to SVG
 It is also possible to pass variables from the terminal to the JS and following SVG. Let's say you want to assign the SVG rectangle a variable color's value.
 
-**4a. `jsdom.node.with_parameters.js` file**, check the 2 changes :
+**4a. `svgcreator.node.with_parameters.js` file**, check the 2 changes :
     
     var jsdom = require('jsdom');
     jsdom.env(
@@ -102,7 +102,7 @@ It is also possible to pass variables from the terminal to the JS and following 
 **4b. Run in terminal**
     
     $cd /my/working/dir/
-    $COLOR=#66AAFF, node jsdom.node.js > out.svg   #passing var COLOR
+    $COLOR=#66AAFF node svgcreator.node.js > out.svg   #passing var COLOR
 
 ![no comment](https://raw.github.com/hugolpz/svgcreator.node.js/master/out.VAR_COLOR.png)
 
