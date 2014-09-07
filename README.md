@@ -77,7 +77,7 @@ To allow more flexible filenaming by reusing **local variables**, it's better to
 ### Passing arguments: from command to JS to SVG
 To pass a variable from the terminal to the JS script, you can either :
 
- - set an environment variable in the shell `var=red`, then run the node script which assign this variable `var myvar = process.env.var ;`
+ - set an environment variable in the shell `myshvar=red`, then run the node script which assign this variable `var myvar = process.env.myshvar ;`
  - provide an argument `--COLOR='green'`, then use Node arguments parser module [`minimist`](https://github.com/substack/minimist/) to parse and assign this variable `var myvar = argv.COLOR;` or `var myvar = argv[2];`
 
     npm install minimist  # local install
