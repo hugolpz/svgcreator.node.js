@@ -66,7 +66,7 @@ The `console.log` goes to `stdout` then printed into `out.svg`. Job done!
 
 ![no comment](https://raw.github.com/hugolpz/svgcreator.node.js/master/out.png)
 
-### Using local variable : from JS to SVG
+### Naming files from local variable (JS to SVG)
 
 To allow more flexible filenaming by reusing **local variables**, it's better to print your file using the node module `fs`:
 
