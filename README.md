@@ -20,10 +20,8 @@ Then nothing is stopping you :)
 **2. Install jsdom ([2](https://github.com/tmpvar/jsdom#install))**
 Using the Node Packages Manager, as global or local:
 
-    $sudo npm install -g jsdom     # -g for global installation, or
-    $npm install jsdom             # local install
-
-You also need [D3js](http://d3js.org/d3.v3.min.js).
+    $sudo npm install -g jsdom d3js    # global installation, or
+    $npm install jsdom d3js            # local install
 
 ### Node.js + jsdom + D3js = SVG
 
@@ -33,7 +31,7 @@ You also need [D3js](http://d3js.org/d3.v3.min.js).
     jsdom.env(
       "<html><body></body></html>",        // CREATE DOM HOOK
       [ 'http://d3js.org/d3.v3.min.js',    // JS DEPENDENCIES online ...
-      'js/d3.v3.min.js' ],                 // ... & offline
+      'js/d3.v3.min.js' ],                 // ... & local-offline
     
       function (err, window) {
     
